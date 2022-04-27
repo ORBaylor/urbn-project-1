@@ -1,15 +1,34 @@
 <template>
+<div class="container">
+   <joke-header></joke-header>
   <geek-jokes></geek-jokes>
+  <joke-footer></joke-footer>
+  <dark-joke-footer id="dark-footer"></dark-joke-footer>
+  <friends-quotes></friends-quotes>
+</div>
+ 
   <router-view/>
 </template>
 
 
 <script>
+import FriendsQuotes from '@/components/FriendsQuotes.vue'
 
+
+import JokeFooter from '@/components/JokeFooter.vue'
+import DarkJokeFooter from '@/components/DarkJokeFooter.vue'
 import GeekJokes from '@/components/GeekJokes.vue'
+import JokeHeader from '@/components/JokeHeader.vue'
 export default {
   components: {
-    GeekJokes
+    FriendsQuotes,
+    GeekJokes,
+    JokeHeader,
+    JokeFooter,
+    DarkJokeFooter,
+   
+    
+    
   }
 };
 
@@ -17,24 +36,11 @@ export default {
 
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-nav {
-  padding: 30px;
-}
+  
+  
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+
+
 </style>

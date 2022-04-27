@@ -18,7 +18,7 @@
 export default {
     data(){
         return {
-            joke:  "new test"
+            joke:  "joke"
         }
     }
 }
@@ -29,8 +29,10 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 200px;
         
         background-color: whitesmoke;
-        height: 100vh;
+        height: 500px;
+        width: auto;
     }
 </style>
