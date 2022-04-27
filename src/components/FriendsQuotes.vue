@@ -51,6 +51,7 @@
 
 <script>
 import FriendsService from '../services/FriendsService';
+
 //How to change the background color using two tones
 // background: linear-gradient(red,blue);
 
@@ -79,16 +80,16 @@ export default {
         });
       },
       checkAnswer(){
-        while(this.rightAnswer <= 5 || this.wrongAnswer <= 5){
-             if(this.userInput == this.character){
+        
+         if(this.userInput == this.character){
           this.rightAnswer++;
            this.retriveveQuote();
-        }
-        else{
+             }
+              else{
           this.wrongAnswer++;
            this.retriveveQuote();
-        }
-        }
+              }       
+        
        
        
       }

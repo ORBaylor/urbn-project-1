@@ -16,12 +16,13 @@ export default {
 <style scoped>
 .container{
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background-color: lightskyblue;
     border-style: outset;
     height: 120px;
+     width: 300px;
 }
 .btn{
     background-color: whitesmoke;
