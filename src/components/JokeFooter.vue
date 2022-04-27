@@ -1,7 +1,7 @@
 <template>
  <div class="btn-div">
-    <button class="btn"> Joke 1</button>
-    <button class="btn"> Joke 2</button>
+    <button class="btn" v-on:click="redirectJoke"> Joke </button>
+    <button class="btn" v-on:click="redirectFriend" > Friend</button>
   
 
  </div>
@@ -9,7 +9,14 @@
 
 <script>
 export default {
-
+    methods: {
+        redirectJoke(){
+            this.$router.push({ name: 'joke' });
+        },
+        redirectFriend(){
+            this.$router.push({ name: 'friend' });
+        }
+    }
 }
 </script>
 

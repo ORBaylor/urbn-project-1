@@ -1,14 +1,19 @@
 <template>
  <div class="container">
-    <button class="btn"> Dark Joke 1</button>
-    <button class="btn"> Dark Joke 2</button>
+    <button class="btn" v-on:click="redirect"> Home</button>
+    
    
  </div>
 </template>
 
 <script>
 export default {
-
+      methods: {
+        redirect(){
+            this.$router.push({ name: 'home' });
+        },
+      
+    }
 }
 </script>
 
@@ -16,9 +21,9 @@ export default {
 .container{
     display: flex;
     align-items: flex-end;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: lightskyblue;
     border-style: outset;
     height: 120px;
 }
