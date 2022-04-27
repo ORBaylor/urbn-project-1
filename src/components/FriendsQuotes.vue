@@ -4,11 +4,13 @@
       <table id="score">
         <thead>
           <th> Correct</th>
-          <th> {{}}  Wrong</th>
+          <th> | | </th>
+          <th>  Wrong</th>
         </thead>
-        <tbody>
-          <td> {{rightAnswer}}</td>
-          <td> {{wrongAnswer}}</td>
+        <tbody >
+          <td > {{rightAnswer}}  </td>
+          <td>|    |</td>
+          <td > {{wrongAnswer}}</td>
         </tbody>
       </table>
     </div>
@@ -108,6 +110,14 @@ export default {
   
   
 }
+.header{
+  display: flex;
+  background-color: whitesmoke;
+}
+td{
+  margin-left: 100px;
+  margin: 20px;
+}
 .quote{
   display: flex;
   align-items: center;
@@ -125,6 +135,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   height: 300px;
 }
 #btn{

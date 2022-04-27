@@ -1,5 +1,5 @@
 <template>
- <div class="container">
+ <div class="btn-div">
     <button class="btn"> Joke 1</button>
     <button class="btn"> Joke 2</button>
   
@@ -14,9 +14,9 @@ export default {
 </script>
 
 <style scoped>
-.container{
+.btn-div{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     background-color: lightskyblue;
