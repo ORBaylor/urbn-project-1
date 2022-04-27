@@ -22,7 +22,7 @@ export default {
     background-color: lightskyblue;
     border-style: outset;
     height: 120px;
-     width: 300px;
+   
 }
 .btn{
     background-color: whitesmoke;

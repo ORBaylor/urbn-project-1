@@ -1,5 +1,5 @@
 <template>
-<div class="contain">
+<div class="container">
    <joke-header></joke-header>
   <geek-jokes></geek-jokes>
  
@@ -16,16 +16,16 @@
 import FriendsQuotes from '@/components/FriendsQuotes.vue'
 
 
-import JokeFooter from '@/components/JokeFooter.vue'
+//import JokeFooter from '@/components/JokeFooter.vue'
 //import DarkJokeFooter from '@/components/DarkJokeFooter.vue'
 //import GeekJokes from '@/components/GeekJokes.vue'
-import JokeHeader from '@/components/JokeHeader.vue'
+//import JokeHeader from '@/components/JokeHeader.vue'
 export default {
   components: {
     FriendsQuotes,
     //GeekJokes,
-    JokeHeader,
-    JokeFooter,
+    //JokeHeader,
+    //JokeFooter,
     //DarkJokeFooter,
    
     
@@ -37,16 +37,7 @@ export default {
 
 
 <style scoped>
-.contain{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 600px;
-  margin-left: 450px;
-    margin-top: 30px;
-    background-color: aquamarine;
-}
+
   
   
 

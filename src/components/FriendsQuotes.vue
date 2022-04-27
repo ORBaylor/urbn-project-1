@@ -1,10 +1,10 @@
 <template>
-  <div class="container">
+  <div class="contain">
     <div class="header">
       <table id="score">
         <thead>
           <th> Correct</th>
-          <th>Wrong</th>
+          <th> {{}}  Wrong</th>
         </thead>
         <tbody>
           <td> {{rightAnswer}}</td>
@@ -13,7 +13,7 @@
       </table>
     </div>
     <div class="main">
-      <label for="friendsQuote">quote</label>
+      <label for="friendsQuote">QUOTE:</label>
       
       <div class="quote">
         {{quote}}
@@ -98,14 +98,20 @@ export default {
 </script>
 
 <style scoped>
-.container{
+.contain{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: orange;
+  background:  #F7F7F7;
+  height: 600px;
+  
+  
 }
-
+.quote{
+  display: flex;
+  align-items: center;
+}
 #friendsQuote{
   max-width: auto;
 }
@@ -114,9 +120,22 @@ export default {
   width: 600px;
 }
 .main{
-  background-color: beige;
+  background-color: #c4dbfa;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 300px;
 }
+#btn{
+        height: 30px;
+    border: 1px solid;
+    
+    background-color: cornflowerblue;
+    margin: 0px, 20px;
+    border-radius: 10px;
+     width: 150px;
+     border: 2px solid gray;   
+     color: white;
+    }
 </style>
