@@ -106,7 +106,7 @@ export default {
   justify-content: center;
   align-items: center;
   background:  #F7F7F7;
-  height: 600px;
+  
   
   
 }
@@ -130,7 +130,7 @@ td{
   width: 600px;
 }
 .main{
-  background-color: #c4dbfa;
+  background-color:  #F7F7F7;
   display: flex;
   flex-direction: column;
   justify-content: center;

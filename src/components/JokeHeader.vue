@@ -1,28 +1,50 @@
 <template>
  <div class="container">
+  
      <label class="switch">
-         <input type="checkbox">
+         <input type="checkbox" v-model="isToggled">
         <span class="slider round"></span>
     </label>
+    <div class="urbn-div" v-show="isToggled">
+      <img src="../assets/urban-outfitters-logo.png" alt="urban-logo">
+    </div>
  </div>
 </template>
 
 <script>
 export default {
-
+  data(){
+    return{
+      isToggled: false
+    }
+  }
 }
 </script>
 
 <style scoped>
 .container{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
     background-color: lightskyblue;
     border-style: outset;
     height: 120px;
 }
+
+
+img {
+  margin-left: 70px;
+ max-width: 50%;
+ max-height: 100%;
+}
+.urban-div {
+  
+ height: 100px;
+ width: 100px;
+}
 .switch {
+
   margin-right: 33px;  
   position: relative;
   display: inline-block;

@@ -8,7 +8,7 @@
           <h3>{{joke}}</h3>
          
         </div>
-        <div>
+        <div class="btn-class">
              <button v-on:click="retriveveJoke" id="btn">Next</button>
         </div>
     </div>
@@ -41,10 +41,11 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 200px;
+        margin-top: 100px;
+        margin-bottom: 100px;
         
         background:  #F7F7F7;
-        height: 500px;
+        
         width: auto;
     }
     .center{
@@ -67,5 +68,8 @@ export default {
      width: 150px;
      border: 2px solid gray;   
      color: white;
+     
+     
     }
+   
 </style>
